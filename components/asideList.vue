@@ -1,6 +1,6 @@
 <template>
     <!-- 侧边 -->
-         <el-aside>
+         <el-aside :isFullScreen="isFullScreen">
             <el-menu background-color="#374049" text-color="#cecece" active-text-color="#4e78d1" :router='true' :unique-opened='true' :default-active='$route.path'>
                 <el-submenu index='1'>
                     <template slot='title'><i class="el-icon-setting"> 用户管理</i></template>
