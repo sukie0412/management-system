@@ -1,13 +1,13 @@
 <style>
 .order-panel1{
-  background-color: #e9ebec;
+  background-color: #EDEDED;
   height: 140px;
-  border-radius: 10px
+  border-radius: 5px
 }
 .order-panel2{
-  background-color: #e9ebec;
-  height: 400px;
-  border-radius: 10px;
+  background-color: #EDEDED;
+  height: 100%;
+  border-radius: 5px;
   margin-top: 30px;
 }
   .el-form{
@@ -18,23 +18,22 @@
   }
   .el-button{
     margin-left: 50px;
-    margin-bottom: 20px;
+    margin-top: 5px;
   }
   .el-table{
-    margin-top: 30px;
-    margin-left: 1%;
-    margin-right: 1%
-  }
-  .el-table-column{
     margin-top: 10px;
+    margin-left: 1%;
   }
+/*  .el-table-column{
+    margin-top: 10px;
+  }*/
 
 </style>
 
 <template>
     <section>
-      <div class='order-panel1'>
-              <!-- 搜索 -->
+      <!-- 搜索 -->
+      <div class='order-panel1'>        
         <el-form ref='el-form' :model='form' label-width='120px' >
             <el-row :gutter='15'>
               <el-col :span='6'>
@@ -66,11 +65,12 @@
               </el-col>
             </el-row>
         </el-form>
-      </div>  
+      </div> 
+
+      <!-- 表格 --> 
       <div class='order-panel2'>
-        <!-- 表格 -->
         <el-row>
-          <el-table :data='tableData' border style='width:98%'>
+          <el-table :data='orderData' height='400' border style='width:98%'>
             <el-table-column type='selection' width='80'></el-table-column>
             <el-table-column prop='orderId' label='订单ID' width='180'></el-table-column>
             <el-table-column prop='orderNum' label='订单编号' width='180'></el-table-column>
