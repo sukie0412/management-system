@@ -1,27 +1,27 @@
 <style>
-.department-panel1{
+.dpm-panel1{
   background-color: #EDEDED;
   height: 80px;
   border-radius: 5px
 }
-.department-panel2{
+.dpm-panel2{
   background-color: #EDEDED;
   height: 100%;
   border-radius: 5px;
   margin-top: 50px;
 }
-.department-form{
+.dpm-form{
   margin-top:20px;
 }
-.dep-button{
+.dpm-button{
   margin-left: 50px;
   margin-top: 20px;
 }
-.dep-search{
+.dpm-search{
   margin-left:500px;
   margin-top: -40px;
 }
-.department-table{
+.dpm-table{
   margin-left: 1%;
   margin-top: 10px;
 }
@@ -30,13 +30,13 @@
 
 <template>
     <section>
-      <div class='department-panel1'>
-        <el-form label-width='120px'  :model='form' class='department-form'>
+      <div class='dpm-panel1'>
+        <el-form label-width='120px'  :model='form' class='dpm-form'>
           <el-row :gutter='10'>
-            <el-col :span='1' class='dep-button'>
+            <el-col :span='1' class='dem-button'>
                 <el-button type='primary' icon='el-icon-plus'>添加</el-button>
             </el-col>
-            <el-col :span='1' class='dep-button'>
+            <el-col :span='1' class='dem-button'>
                 <el-button type='primary' icon='el-icon-edit'>修改</el-button>
             </el-col>
             <el-col :span='2' class='dep-button'>
@@ -56,9 +56,9 @@
       </div>
 
       <!-- 列表面板 -->
-      <div class='department-panel2'>
+      <div class='dpm-panel2'>
         <el-row>
-          <el-table class='department-table' :data='departmentData' height='400' border style='width:98%'>
+          <el-table class='dpm-table' :data='departmentData' height='400' border style='width:98%'>
             <el-table-column prop='name' label='部门编号' width='120'></el-table-column>
             <el-table-column prop='name' label='部门名称' width='180'></el-table-column>
             <el-table-column prop='name' label='部门负责人' width='180'></el-table-column>

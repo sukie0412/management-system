@@ -24,11 +24,8 @@
                     <el-menu-item index='3-4'>部门列表</el-menu-item>
                 </el-submenu>
                 <el-submenu index='4'>
-                    <template slot='title'><i class="el-icon-setting"> 订单管理</i></template>
-                    <el-menu-item index='4-1'>部门列表</el-menu-item>
-                    <el-menu-item index='4-2'>部门列表</el-menu-item>
-                    <el-menu-item index='4-3'>部门列表</el-menu-item>
-                    <el-menu-item index='4-4'>部门列表</el-menu-item>
+                    <template slot='title'><i class="el-icon-setting"> 货运管理</i></template>
+                    <el-menu-item index='/admin/transport/transport-list'>货运列表</el-menu-item>
                 </el-submenu>
                 <el-submenu index='5'>
                     <template slot='title'><i class="el-icon-setting"> 用户管理</i></template>
